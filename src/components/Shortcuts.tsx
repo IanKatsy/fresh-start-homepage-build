@@ -4,8 +4,6 @@ import {
   Github, 
   Twitter, 
   Search, 
-  Spotify, 
-  Discord,
   Mail,
   LineChart,
   LayoutGrid,
@@ -16,7 +14,9 @@ import {
   Code,
   Monitor,
   Keyboard,
-  Music
+  Music,
+  MessageSquare, // Replacement for Discord
+  PlayCircle    // Replacement for Spotify
 } from 'lucide-react';
 
 // Define the shortcut type
@@ -50,7 +50,7 @@ const shortcuts: Record<string, Shortcut[]> = {
     },
     {
       name: "Discord",
-      icon: <Discord size={20} />,
+      icon: <MessageSquare size={20} />, // Using MessageSquare instead of Discord
       url: "https://discord.com",
       color: "text-indigo-400",
     },
@@ -58,7 +58,7 @@ const shortcuts: Record<string, Shortcut[]> = {
   "Tools": [
     {
       name: "Spotify",
-      icon: <Spotify size={20} />,
+      icon: <PlayCircle size={20} />, // Using PlayCircle instead of Spotify
       url: "https://spotify.com",
       color: "text-green-400",
     },
